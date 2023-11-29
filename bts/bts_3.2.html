@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>i miei lavori bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img.bootstrap/bootstrap-logo.svg">
+    <style>       
+    body {
+        background-color: #050505;
+        color: #1970c7;
+    }
+
+    .navbar {
+        background-color: #007bff;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+    .jumbotron {
+        background-color: #ffffff;
+        border: 1px solid #4e05b5;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .custom-rounded {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 2px solid #28a745; 
+        border-radius: 50%; 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .custom-rounded:hover {
+        transform: scale(1.1); 
+    }
+    .custom-thumbnail {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 2px solid #28a745; 
+        border-radius: 10px; 
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    .custom-thumbnail:hover {
+        transform: scale(1.1);
+    }
+   
+
+    .custom-money-image {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border: 2px solid #28a745; 
+        border-radius: 10px;  
+        transition: transform 0.3s ease-in-out; 
+        
+    }
+    .custom-money-image:hover{
+        transform: scale(1.1);
+    }
+</style>
+    </style>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">  
+    <img src="img.bootstrap/bootstrap-logo.svg" alt="" width="30" height="24">
+    <a class="navbar-brand" href="bts_home.html">lavori bootstrap </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="bts_1.1.html">1.1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_1.2.html">1.2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_2.2.html">2.2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_3.1.html">3.1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_3.2.html">3.2<span class="sr-only">home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_4.1.html">4.1</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="jumbotron jumbotron-fluid  text-dark text-center bg-info">
+    <div class="container">
+        <h1 class="display-4">non provarci è comunque una sconfitta</h1>
+        <p class="lead">il 90% dei giocatori si ferma prima di una vincita</p>
+    </div>
+    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="/img.bootstrap/soldi.jpg" class="rounded custom-money-image" alt="Immagine Cerchio">
+                    <div style="color: rgb(26, 117, 12);">
+                        <p>Esempio di ludopatico</p>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 text-center">
+                    <img src="/img.bootstrap/roulette.jpg" class="img-thumbnail custom-thumbnail" alt="Immagine Thumbnail">
+                    <div style="color: rgb(26, 117, 12);">
+                        <p>la fortuna gira</p>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 text-center">
+                    <img src="/img.bootstrap/ludopatia.jpg" class="rounded-circle custom-rounded" alt="Immagine Arrotondata">
+                    <div style="color: rgb(26, 117, 12);">
+                        <p>diventa ricco facilmente!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>scometti adesso</strong> Clicca <a href="bts_3.2.html" class="alert-link">qui</a> per bonus benvenuto.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+  
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-2">
+                <button type="button" class="btn btn-outline-success mb-2">punta</button>
+
+                <button type="button" class="btn btn-danger btn-block mb-2">scometti</button>
+    
+                <button type="button" class="btn btn-outline-info">puntata</button>
+
+                <button type="button" class="btn btn-outline-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+
+                <div class="dropdown-menu bg-info">
+                    <a class="dropdown-item text-light" href="#">10$</a>
+                    <a class="dropdown-item text-light" href="#">20$</a>
+                    <a class="dropdown-item text-light" href="#">50$</a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
