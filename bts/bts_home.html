@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>i miei lavori bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="img.bootstrap/bootstrap-logo.svg">
+    <style type="text/css"> 
+    .carousel-caption{
+        margin-bottom:150px;
+    }     
+    .carousel-caption h2{
+        font: size 35px;;
+    }    
+    body {
+        background-color: #050505;
+        color: #1970c7;
+    }
+
+    .navbar {
+        background-color: #007bff;
+    }
+
+    .navbar-brand, .navbar-nav .nav-link {
+        color: #ffffff;
+    }
+
+    .jumbotron {
+        background-color: #ffffff;
+        border: 1px solid #4e05b5;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .carousel {
+            height: 100%;
+           
+        }
+
+        .carousel-item {
+            height: 100vh;
+        }
+
+        .carousel-item iframe {
+            width: 100%;
+            height: 100%;
+        }
+      
+</style>
+    </style>
+</head>
+<body>
+
+<!-- barra di navigazione --> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">  
+    <img src="img.bootstrap/bootstrap-logo.svg" alt="" width="30" height="24">
+    <a class="navbar-brand" href="bts_home.html">lavori bootstrap </a>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="bts_1.1.html">1.1<span class="sr-only">home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_1.2.html">1.2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_2.2.html">2.2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_3.1.html">3.1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_3.2.html">3.2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bts_4.1.html">4.1</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--carosello-->
+<div id="slide" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <video class="img-fluid" autoplay loop muted>
+                <source src="/img.bootstrap/video 1.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption font-weight-bold text-warning">
+                <h2> Esempio alcuni lavori</h2>
+                <button type="button" class="btn btn-warning btn-lg mt-3 text-white">Per saperne di più</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="img-fluid" autoplay loop muted>
+                <source src="/img.bootstrap/video 2.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption font-weight-bold text-warning">
+                <h2> Esempio alcuni lavori</h2>
+                <button type="button" class="btn btn-warning btn-lg mt-3 text-white">Per saperne di più</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <video class="img-fluid" autoplay loop muted>
+                <source src="/img.bootstrap/video 3.mp4" type="video/mp4">
+            </video>
+            <div class="carousel-caption font-weight-bold text-warning">
+                <h2> Esempio alcuni lavori</h2>
+                <button type="button" class="btn btn-warning btn-lg mt-3 text-white">Per saperne di più</button>
+            </div>
+        </div>
+    </div>
+<!--avanti-->
+    <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Precedente</span>
+    </a>
+    <!--indietro-->
+    <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">successivo</span>
+    </a>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--tempo slide  -->
+<script>  
+    $('#slide').carousel({
+        interval: 5000
+    });
+</script>     
+
+</div>
+
+</body>
+
+</html>
